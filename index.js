@@ -50,7 +50,7 @@ async function run() {
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
     } finally {
-        // Ensures that the client will close when you finish/error
+        // Ensures that the client will close when you finish/error/////
         // await client.close();
     }
 }
@@ -61,7 +61,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send("hello, this is my server ollaalala")
+    res.send("hello, this is my server")
 })
 
 app.listen(port, () => {
