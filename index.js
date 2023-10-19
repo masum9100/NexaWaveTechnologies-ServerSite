@@ -33,7 +33,7 @@ async function run() {
         app.get('/product', async(req, res)=>{
             const cursor = allProduct.find()
             const result = await cursor.toArray()
-            res.send(resultgit )
+            res.send(result)
         })
 
         app.post('/product', async(req, res)=>{
